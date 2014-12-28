@@ -38,6 +38,7 @@ options:
   version:
     description:
       - Version of a package to install. If version is omitted, newest version of a package will be installed.
+    required: false
     default: null
   channel:
     description:
@@ -46,7 +47,7 @@ options:
     default: null
   state:
     description:
-      - Desired state of a package.
+      - Desired state of a package or channel.
     required: false
     default: present
     choices: [ "present", "absent" ]
